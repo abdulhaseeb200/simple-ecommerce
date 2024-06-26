@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple E-commerce Website</h1>
+    <div>
+        <label for="filter">Sort by:</label>
+        <select id="filter" onchange="applyFilter()">
+            <option value="default">Default</option>
+            <option value="priceLowHigh">Price: Low to High</option>
+            <option value="priceHighLow">Price: High to Low</option>
+            <option value="ratingLowHigh">Rating: Low to High</option>
+            <option value="ratingHighLow">Rating: High to Low</option>
+        </select>
+    </div>
+    <div id="products"></div>
+    <script src="app.js"></script>
+</body>
+</html>
